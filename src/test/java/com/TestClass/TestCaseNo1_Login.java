@@ -11,7 +11,6 @@ import com.Uitility.ExtendReportClass;
 @Listeners(ExtendReportClass.class)
 public class TestCaseNo1_Login extends BaseClass {
 
-	
 	@Test
 	public void login() {
 
