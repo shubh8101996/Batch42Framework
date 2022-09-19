@@ -67,7 +67,7 @@ public class ExtendReportClass implements ITestListener {
 		test = reports.createTest(result.getName());//create entry in html report
 		test.log(Status.FAIL, MarkupHelper.createLabel("Name of the failed test case is: " + result.getName() ,ExtentColor.RED));
 	
-	String screenShotPath = System.getProperty("user.dir") + "\\Screenshot\\" + result.getName() + ".png";
+	String screenShotPath = "C:\\Users\\shubh\\eclipse-workspace\\Batch42Framework\\Screenshot" + result.getName() + ".png";
 	
 	File screenShotFile = new File(screenShotPath);
 	
@@ -77,9 +77,8 @@ public class ExtendReportClass implements ITestListener {
 		
 	}
 	
-		test.addScreenCaptureFromPath(null);
-		
-	
+//		test.addScreenCaptureFromPath(null);
+
 	}
 
 	@Override

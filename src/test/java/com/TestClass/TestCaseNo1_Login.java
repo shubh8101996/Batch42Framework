@@ -18,7 +18,7 @@ public class TestCaseNo1_Login extends BaseClass {
 		LoginPageClass lp = new LoginPageClass(driver);
 		lp.emailClear();
 		lp.passwordClear();
-		Assert.assertTrue(false);
+//		Assert.assertTrue(false);
 		lp.enterCred(mainUsername, mainPass);
 		lp.clickLogbtn();
 

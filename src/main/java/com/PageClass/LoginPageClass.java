@@ -14,7 +14,7 @@ public class LoginPageClass {
 	@FindBy(id="Password")
 	private WebElement password;
 	
-	@FindBy(xpath="//button[text()='Log in']")
+	@FindBy(xpath="//button[text()='Log i']")
 	private WebElement loginbtn;
 	
 	@FindBy(id="RememberMe")

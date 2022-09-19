@@ -25,7 +25,7 @@ public class BaseClass {
    public String mainPass=read.password();
 
 	@Parameters({"browser"})
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void BrowserSet(@Optional("chrome") String browser) {
 
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -59,7 +59,7 @@ public class BaseClass {
 
 	}
 
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void BrowserClose() {
 
 		driver.quit();
