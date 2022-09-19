@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 
 import com.Uitility.ReadConfig;
@@ -32,7 +33,12 @@ public class BaseClass {
 		if (browser.equalsIgnoreCase("chrome")) {
 
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--headless");
+		  
+//			options.addArguments("incognito");
+			
+			driver = new ChromeDriver(options);
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
 
