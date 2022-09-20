@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-19T22:10:37 IST" name="Default suite" finished-at="2022-09-19T22:10:51 IST" duration-ms="14445">
+  <suite started-at="2022-09-20T12:52:32 IST" name="Default suite" finished-at="2022-09-20T12:53:08 IST" duration-ms="36377">
     <groups>
     </groups>
-    <test started-at="2022-09-19T22:10:37 IST" name="Default test" finished-at="2022-09-19T22:10:51 IST" duration-ms="14445">
+    <test started-at="2022-09-20T12:52:32 IST" name="Default test" finished-at="2022-09-20T12:53:08 IST" duration-ms="36377">
       <class name="com.TestClass.TestCaseNo1_Login">
-        <test-method is-config="true" signature="BrowserSet(java.lang.String)[pri:0, instance:com.TestClass.TestCaseNo1_Login@53ce1329]" started-at="2022-09-19T22:10:37 IST" name="BrowserSet" finished-at="2022-09-19T22:10:41 IST" duration-ms="3960" status="PASS">
+        <test-method is-config="true" signature="BrowserSet(java.lang.String)[pri:0, instance:com.TestClass.TestCaseNo1_Login@957e06]" started-at="2022-09-20T12:52:32 IST" name="BrowserSet" finished-at="2022-09-20T12:52:36 IST" duration-ms="3799" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserSet -->
-        <test-method signature="login()[pri:0, instance:com.TestClass.TestCaseNo1_Login@53ce1329]" started-at="2022-09-19T22:10:41 IST" name="login" finished-at="2022-09-19T22:10:50 IST" duration-ms="8575" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.TestClass.TestCaseNo1_Login@957e06]" started-at="2022-09-20T12:52:36 IST" name="login" finished-at="2022-09-20T12:53:08 IST" duration-ms="31705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:com.TestClass.TestCaseNo1_Login@53ce1329]" started-at="2022-09-19T22:10:50 IST" name="BrowserClose" finished-at="2022-09-19T22:10:51 IST" duration-ms="1315" status="PASS">
+        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:com.TestClass.TestCaseNo1_Login@957e06]" started-at="2022-09-20T12:53:08 IST" name="BrowserClose" finished-at="2022-09-20T12:53:08 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserClose -->

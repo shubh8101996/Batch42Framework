@@ -49,5 +49,13 @@ public class ReadConfig {
 		return pass;
 
 	}
+	
+	public String headless() {
+
+		String headless = prop.getProperty("headless");
+
+		return headless;
+
+	}
 
 }

@@ -25,6 +25,7 @@ public class BaseClass {
    public String mainUrl=read.BaseUrl();
    public String mainUsername=read.username();
    public String mainPass=read.password();
+   public String mainHeadlessKey=read.headless();
 
 	@Parameters({"browser"})
 	@BeforeTest(alwaysRun = true)
@@ -33,12 +34,19 @@ public class BaseClass {
 		if (browser.equalsIgnoreCase("chrome")) {
 
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions options=new ChromeOptions();
-			options.addArguments("--headless");
-		  
+			if(mainHeadlessKey.equalsIgnoreCase("true")) {
+				
+				ChromeOptions options=new ChromeOptions();
+				options.addArguments("--headless");
+				driver = new ChromeDriver(options);
+
+			}else {
+				
+				driver=new ChromeDriver();
+			}
+			
 //			options.addArguments("incognito");
 			
-			driver = new ChromeDriver(options);
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
 
